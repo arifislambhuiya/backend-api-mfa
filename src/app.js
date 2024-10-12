@@ -29,10 +29,10 @@ app.use(passport.session())
 
 
 //import route
-
+ import authRoute from  './routes/authRouter.js'
 
 //use route
-
+app.use("/api",authRoute)
 
 export{
     app
